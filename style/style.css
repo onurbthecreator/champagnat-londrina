@@ -1,0 +1,13 @@
+#imagem-central {
+    width: 100%;
+}
+
+#imagem-central img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    margin: auto;
+}

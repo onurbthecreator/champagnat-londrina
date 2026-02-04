@@ -1,0 +1,87 @@
+   <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Marcelino Champagnat</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <style>
+        #cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #ffffff;
+        }
+
+        #logo img {
+            width: 80px;
+        }
+
+        #acesso {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;           /* espaço entre os links do menu */
+            flex-grow: 1;        /* ocupa o espaço disponível entre logo e ícones */
+            margin: 0 30px;
+        }
+
+        .acesso-space {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .acesso-space:hover {
+            color: #0066cc;
+        }
+
+        #social-icons {
+            display: flex;
+            align-items: center;
+            gap: 12px;           /* espaço entre os ícones */
+        }
+
+        #social-icons img {
+            width: 32px;
+            transition: transform 0.2s;
+        }
+
+        #social-icons img:hover {
+            transform: scale(1.15);
+        }
+
+        .social {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecalho">
+
+        <div id="logo">
+            <img src="/img/logo.png" alt="logo-champagnat" width="80px">
+        </div>
+
+        <div id="acesso">
+            <a href="" class="acesso-space">Home</a>
+            <a href="" class="acesso-space">Sobre Nós</a>
+            <a href="" class="acesso-space">Projetos</a>
+            <a href="" class="acesso-space">Notícias</a>
+            <a href="" class="acesso-space">Contato</a>
+        </div>
+
+        <div>
+            <a href="https://www.instagram.com/col.marcelinochampagnat/" target="_blank" class="social"><img src="/img/instagram.png" alt="" width="30px"></a>
+            <a href="https://www.facebook.com/champagnatlondrina/?locale=pt_BR" target="_blank" class="social"><img src="/img/facebook.png" alt="" width="30px"></a>
+        </div>
+
+    </div>
+
+    <div id="imagem-central">
+        <img src="/img/banner.png" alt="banner-champagnat">
+    </div>
+</body>
+</html>
