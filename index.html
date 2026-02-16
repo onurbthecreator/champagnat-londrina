@@ -1,87 +1,228 @@
-   <!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Marcelino Champagnat</title>
+    <title>Colégio Estadual Marcelino Champagnat</title>
     <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="/style/style.css">
-    <style>
-        #cabecalho {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            background-color: #ffffff;
-        }
-
-        #logo img {
-            width: 80px;
-        }
-
-        #acesso {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 80px;           /* espaço entre os links do menu */
-            flex-grow: 1;        /* ocupa o espaço disponível entre logo e ícones */
-            margin: 0 30px;
-        }
-
-        .acesso-space {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        .acesso-space:hover {
-            color: #0066cc;
-        }
-
-        #social-icons {
-            display: flex;
-            align-items: center;
-            gap: 12px;           /* espaço entre os ícones */
-        }
-
-        #social-icons img {
-            width: 32px;
-            transition: transform 0.2s;
-        }
-
-        #social-icons img:hover {
-            transform: scale(1.15);
-        }
-
-        .social {
-            padding: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div id="cabecalho">
+    <header class="site-header">
+        <div class="container navbar">
+            <a class="brand" href="#inicio" aria-label="Ir para o início">
+                <img src="img/logo.png" alt="Logo do Colégio Marcelino Champagnat">
+                <span>Colégio Estadual Marcelino Champagnat</span>
+            </a>
 
-        <div id="logo">
-            <img src="/img/logo.png" alt="logo-champagnat" width="80px">
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu-principal" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#noticias">Notícias</a>
+                <a href="#videos">Vídeos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/col.marcelinochampagnat/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do colégio">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/champagnatlondrina/?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook do colégio">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+            </div>
         </div>
+    </header>
 
-        <div id="acesso">
-            <a href="" class="acesso-space">Home</a>
-            <a href="" class="acesso-space">Sobre Nós</a>
-            <a href="" class="acesso-space">Projetos</a>
-            <a href="" class="acesso-space">Notícias</a>
-            <a href="" class="acesso-space">Contato</a>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">Londrina - PR</p>
+                    <h1>Educação com propósito para transformar o futuro</h1>
+                    <p>
+                        Formação integral, valores humanos e protagonismo estudantil para preparar
+                        cada aluno para os desafios do presente e as oportunidades do amanhã.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#contato">Agende uma visita</a>
+                        <a class="btn btn-ghost" href="#sobre">Conheça o colégio</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/banner.png" alt="Estudantes do Colégio Marcelino Champagnat">
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container cards">
+                <article class="card">
+                    <h2>Missão</h2>
+                    <p>
+                        Oferecer educação de qualidade que desenvolve conhecimento, ética e
+                        cidadania, conectando tradição e inovação.
+                    </p>
+                </article>
+                <article class="card">
+                    <h2>Valores</h2>
+                    <p>
+                        Respeito, responsabilidade, solidariedade e pensamento crítico como base
+                        para a formação de pessoas completas.
+                    </p>
+                </article>
+                <article class="card">
+                    <h2>Excelência</h2>
+                    <p>
+                        Equipe pedagógica comprometida com a aprendizagem ativa e com o
+                        acompanhamento de cada estudante.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section" id="sobre">
+            <div class="container section-grid">
+                <div>
+                    <p class="eyebrow">Nosso colégio</p>
+                    <h2>Uma escola que acolhe e prepara para o mundo real</h2>
+                    <p>
+                        Nosso projeto pedagógico valoriza competências acadêmicas, tecnológicas,
+                        socioemocionais e humanas. Incentivamos autonomia, criatividade e
+                        participação ativa na comunidade.
+                    </p>
+                </div>
+                <div class="stats">
+                    <div><strong>59</strong><span>Anos de história</span></div>
+                    <div><strong>+100</strong><span>Educadores e colaboradores</span></div>
+                    <div><strong>100%</strong><span>Foco no protagonismo do aluno</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projetos">
+            <div class="container">
+                <p class="eyebrow">Projetos</p>
+                <h2>Aprendizagem além da sala de aula</h2>
+                <div class="project-list">
+                    <article>
+                        <h3>Banda Marcelino Champagnat</h3>
+                        <p>Incentivo à expressão artística, disciplina e trabalho em equipe.</p>
+                    </article>
+                    <article>
+                        <h3>Grêmio Estudantil</h3>
+                        <p>Participação democrática e protagonismo juvenil na vida escolar.</p>
+                    </article>
+                    <article>
+                        <h3>Esporte e Futsal</h3>
+                        <p>Formação física, mental e social por meio do esporte educacional.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="news section" id="noticias">
+            <div class="container">
+                <p class="eyebrow">Notícias</p>
+                <h2>Últimos destaques da comunidade escolar</h2>
+                <div class="news-grid">
+                    <article>
+                        <h3>Inscrições abertas para atividades extracurriculares</h3>
+                        <p>Secretaria disponível para orientações e novas matrículas.</p>
+                    </article>
+                    <article>
+                        <h3>Semana da participação estudantil</h3>
+                        <p>Eventos de liderança e integração para fortalecer o grêmio.</p>
+                    </article>
+                    <article>
+                        <h3>Equipe de futsal em destaque</h3>
+                        <p>Parabéns aos estudantes pelo desempenho e espírito esportivo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos section" id="videos">
+            <div class="container">
+                <p class="eyebrow">Vídeos</p>
+                <h2>Conteúdos em destaque</h2>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/fvvAJ9kDT0g?si=Fwzryuvic3kmX7zb" title="YouTube video player 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/tVU8wExafaU?si=PSW9ijtW9sCsvhz9" title="YouTube video player 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-frame">
+                            <iframe src="https://www.youtube.com/embed/nOd_-OZrXCc?si=boaRfV6cTnhAOLh9" title="YouTube video player 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contato">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">Contato</p>
+                    <h2>Vamos construir o futuro juntos</h2>
+                    <p>Fale com nossa equipe para conhecer turmas, projetos e formas de ingresso.</p>
+                </div>
+                <div class="contact-card">
+                    <p><strong>Endereço:</strong> Rua São Salvador, 998 - Centro, Londrina - PR, 86026-480</p>
+                    <p><strong>Telefone:</strong> (43) 3323-9332</p>
+                    <p><strong>E-mail:</strong> marcelinochampagnat@yahoo.com.br</p>
+                    <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Ver localização</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Colégio Estadual Marcelino Champagnat. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/col.marcelinochampagnat/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do colégio">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/champagnatlondrina/?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook do colégio">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+            </div>
         </div>
+    </footer>
 
-        <div>
-            <a href="https://www.instagram.com/col.marcelinochampagnat/" target="_blank" class="social"><img src="/img/instagram.png" alt="" width="30px"></a>
-            <a href="https://www.facebook.com/champagnatlondrina/?locale=pt_BR" target="_blank" class="social"><img src="/img/facebook.png" alt="" width="30px"></a>
-        </div>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
 
-    </div>
+        if (menuToggle && menu) {
+            menuToggle.addEventListener("click", () => {
+                const isOpen = menu.classList.toggle("is-open");
+                menuToggle.classList.toggle("is-open", isOpen);
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+            });
 
-    <div id="imagem-central">
-        <img src="/img/banner.png" alt="banner-champagnat">
-    </div>
+            menu.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("is-open");
+                    menuToggle.classList.remove("is-open");
+                    menuToggle.setAttribute("aria-expanded", "false");
+                });
+            });
+        }
+    </script>
 </body>
 </html>
